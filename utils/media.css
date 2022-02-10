@@ -1,0 +1,43 @@
+/* Desktops 2K*/
+@media only screen and (max-width: 1536px) {
+  .xxl-hidden {
+    display: none !important;
+  }
+}
+
+/* Desktops */
+@media only screen and (max-width: 1280px) {
+  .xl--hidden {
+    display: none !important;
+  }
+}
+
+/* Laptops */
+@media only screen and (max-width: 1024px) {
+  .lg--hidden {
+    display: none !important;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  .md--hidden {
+    display: none !important;
+  }
+}
+
+/* Tablets, Phones */
+@media only screen and (max-width: 640px) {
+  .sm--hidden {
+    display: none !important;
+  }
+  .sm--grid-flow-row-dense {
+  }
+}
+
+/* Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .xs--hidden {
+    display: none !important;
+  }
+}

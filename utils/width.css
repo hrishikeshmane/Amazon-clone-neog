@@ -1,0 +1,119 @@
+.w-0 {
+  width: 0px;
+}
+
+.w-px {
+  width: 1px;
+}
+.w-0\5 {
+  width: 0.125rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+.w-1\5 {
+  width: 0.375rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+.w-2\5 {
+  width: 0.625rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+.w-3\5 {
+  width: 0.875rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-50pc {
+  width: 50%;
+}
+
+.w-33pc {
+  width: 33.333333%;
+}
+
+.w-66pc {
+  width: 66.666667%;
+}
+
+.w-25pc {
+  width: 25%;
+}
+
+.w-75pc {
+  width: 75%;
+}
+
+.w-20pc {
+  width: 20%;
+}
+
+.w-40pc {
+  width: 40%;
+}
+
+.w-60pc {
+  width: 60%;
+}
+
+.w-80pc {
+  width: 80%;
+}
+
+.w-90pc {
+  width: 90%;
+}
+
+.w-16pc {
+  width: 16.666667%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-fit {
+  width: fit-content;
+}

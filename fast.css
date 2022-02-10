@@ -1,0 +1,23 @@
+/* utilities */
+@import url("./utils/utils.css");
+@import url("./utils/margin.css");
+@import url("./utils/padding.css");
+@import url("./utils/width.css");
+@import url("./utils/height.css");
+@import url("./utils/media.css");
+@import url("./utils/grid.css");
+@import url("./utils/reset.css");
+
+/* components */
+@import url("./components/header.css");
+
+@import url("./components/avatar.css");
+@import url("./components/alert.css");
+@import url("./components/badge.css");
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/image.css");
+
+body {
+  height: 100vh;
+}
