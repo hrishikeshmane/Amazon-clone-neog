@@ -1,0 +1,45 @@
+.product-container {
+  grid-template-columns: 260px 1fr;
+  grid-template-areas: "aside main";
+}
+
+/* Desktops 2K*/
+@media only screen and (max-width: 1536px) {
+  .product-feed {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Desktops */
+@media only screen and (max-width: 1280px) {
+  .product-feed {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Laptops */
+@media only screen and (max-width: 1024px) {
+  .product-feed {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+  .product-feed {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Tablets, Phones */
+@media only screen and (max-width: 640px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "aside"
+      "main";
+  }
+  .product-feed {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

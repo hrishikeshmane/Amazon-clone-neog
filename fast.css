@@ -6,10 +6,12 @@
 @import url("./utils/height.css");
 @import url("./utils/media.css");
 @import url("./utils/grid.css");
+@import url("./utils/flex.css");
 @import url("./utils/reset.css");
 
 /* components */
 @import url("./components/header.css");
+@import url("./components/productfeed.css");
 
 @import url("./components/avatar.css");
 @import url("./components/alert.css");

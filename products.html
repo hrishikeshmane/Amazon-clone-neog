@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link white rel="stylesheet" href="./fast.css" />
+    <link white
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+	<link white rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Amazon Clone</title>
+  </head>
+  <body>
+		<header>
+			<div class="flex items-center bg-amazon_blue p-1 grow py-2">
+				<div class="mt-2 mb-0 ml-2 mr-8 flex items-center grow-0">
+					<img src="./assets/amazon.png"	width="120"	height="30" class="pointer"/>
+				</div>
+
+				<div class="flex xs--hidden items-center h-10 rounded-md grow pointer bg-amazon_yellow bg-amazon_yellow--hover">
+					<input class="p-2 h-full w-6 grow shrink rounded-sm " type="text" />
+					<i class="fa fa-search h-12 p-4"></i>
+				</div>
+
+				<div class="text-white flex items-center text-sm space-x-6s mx-6 ml-auto">
+					<div class="link white pointer mx-2">
+						<p>Sign in</p>
+						<p class="font-bold text-sm">Account & Lists</p>
+					</div>
+
+					<div class="link white pointer mx-2">
+						<p>Wishlist	</p>
+						<p class="font-bold text-sm">& Orders</p>
+					</div>
+
+					<div class="relative link white items-center pointer ml-2">
+						<i class="fa fa-shopping-cart fa-3x mb-2 mr-5"></i>
+						<span class="flex flex-center absolute -top-1 right-0 m-0 p-1 bg-amazon_yellow rounded-full black font-bold">
+							4
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex space-x-3 p-2 pl-6 items-center bg-amazon_blue-light text-white">
+				<p class="btn-link link white flex items-center pointer">
+					<i class="fa fa-bars fa-lg mr-2"></i>
+					All
+				</p>
+				<p class="btn-link link white mx-3 pointer">Electronics</p>
+				<p class="btn-link link white mx-3 pointer">Men's Clothing</p>
+				<p class="btn-link link white mx-3 pointer">Women's clothing</p>
+
+				<p class="btn-link link white lg--hidden mx-3 pointer">Buy again</p>
+				<p class="btn-link link white lg--hidden mx-3 pointer">Food & Grocery</p>
+				<p class="btn-link link white lg--hidden mx-3 pointer">Prime</p>
+				<p class="btn-link link white lg--hidden mx-3 pointer">Health & Personal Care</p>
+			</div>
+		</header>
+		
+		<div class="grid product-container">
+			<aside class="aside bg-light-gray">	
+				<div class="flex flex-col m-6">
+					<div class="flex">
+						<h4>Filter</h4>
+						<button class="btn-link-secondary ml-auto">clear</button>
+					</div>
+					<hr/>
+					<div class="flex flex-col my-4">
+						<h4 class="font-semibold mb-2 text-2xl">Price</h4>
+						<input type="range" list="tickmarks" class="h-2">
+						<datalist id="tickmarks">
+							<option value="0" label="0%"></option>
+							<option value="10"></option>
+							<option value="20"></option>
+							<option value="30"></option>
+							<option value="40"></option>
+							<option value="50" label="50%"></option>
+							<option value="60"></option>
+							<option value="70"></option>
+							<option value="80"></option>
+							<option value="90"></option>
+							<option value="100" label="100%"></option>
+						</datalist>
+
+					</div>
+					<div class="flex flex-col my-4">
+						<h4 class="font-semibold mb-2 text-2xl">Caegory</h4>
+						<div class="flex-col sm--flex wrap">
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="mensclothing " name="mensclothing">
+								<label for="mensclothing" class="text-lg">Men's Clothing</label>
+							</div>
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="womenclothing " name="womenclothing">
+								<label for="womenclothing" class="text-lg">Women's Clothing</label>
+							</div>
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="electronics" name="electronics">
+								<label for="electronics" class="text-lg">Electronics</label>
+							</div>	
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="jewellery" name="jewellery">
+								<label for="jewellery" class="text-lg">Jewellery</label>
+							</div>				
+						</div>
+					</div>
+					<div class="flex flex-col my-4">
+						<h4 class="font-semibold mb-2 text-2xl">Rating</h4>
+						<div class="flex-col sm--flex wrap">
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="4+ " name="rating">
+								<label for="4+" class="text-lg">4 Stars & above</label>
+							</div>
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="3+ " name="rating">
+								<label for="3+" class="text-lg">3 Stars & above</label>
+							</div>	
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="2+ " name="rating">
+								<label for="2+" class="text-lg">2 Stars & above</label>
+							</div>
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="1+ " name="rating">
+								<label for="1+" class="text-lg">1 Stars & above</label>
+							</div>	
+						</div>
+					</div>
+					<div class="flex flex-col my-4">
+						<h4 class="font-semibold mb-2 text-2xl">Sort by</h4>
+						<div class="flex-col sm--flex wrap">
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="lowToHigh" name="sort">
+								<label for="lowToHigh" class="text-lg">Low to High</label>
+							</div>
+							<div class="flex items-center p-1 pr-4 w-fit">
+								<input type="radio" id="highToLow" name="sort">
+								<label for="highToLow" class="text-lg">High to Low</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<main class="main">
+				<div class="grid gap-5 grid-cols-4 product-feed w-90pc my-10 mx-auto"> 
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
+						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
+						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/tshirt.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">Mens Casual Premium Slim Fit T-Shirts</h4>
+							<p class="text-xs my-2 line-clamp-2">Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and..</p>
+							<h4>₹ 1,338.00</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
+						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
+						<img src="./assets/tshirt2.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<div class="mt-auto">
+							<h4 class="my-3">Mens Casual Slim Fit</h4>
+							<p class="text-xs my-2 line-clamp-2">The color could be slightly different between on the screen and in..</p>
+							<h4>₹ 959.40</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
+						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
+						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/jacket.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">Mens Cotton Jacket</h4>
+							<p class="text-xs my-2 line-clamp-2">great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working,..</p>
+							<h4>₹ 3,359.40</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
+						<p class="absolute top-1 left-2 text-xs italic">Women's  Clothing</p>
+						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/top1.png" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">Opna Women's Short Sleeve Moisture</h4>
+							<p class="text-xs my-2 line-clamp-2">100% Polyester, Machine wash, 100% cationic polyester interlock, Machine..</p>
+							<h4>₹ 499.00</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
+						<p class="absolute top-1 left-2 text-xs italic">Women's  Clothing</p>
+						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/top2.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">MBJ Women's Solid Short Sleeve Boat Neck V</h4>
+							<p class="text-xs my-2 line-clamp-2">95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach..</p>
+							<h4>₹ 591.00</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
+						<p class="absolute top-1 left-2 text-xs italic">electronics</p>
+						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/monitor.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor/h4>
+							<p class="text-xs my-2 line-clamp-2">49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with..</p>
+							<h4>₹ 59,999.40</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
+						<p class="absolute top-1 left-2 text-xs italic">electronics</p>
+						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/monitor2.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">Acer 21.5 inches Full HD Ultra-Thin</h4>
+							<p class="text-xs my-2 line-clamp-2">21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon..</p>
+							<h4>₹ 35,940.00</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+
+					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
+						<p class="absolute top-1 left-2 text-xs italic">electronics</p>
+						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
+						<img src="./assets/harddisk.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<div class="mb-5 mt-auto">
+							<h4 class="my-3">WD 4TB Portable External Hard Drive</h4>
+							<p class="text-xs my-2 line-clamp-2">Expand your PS4 gaming experience, Play anywhere Fast and easy, setup..</p>
+							<h4>₹ 6,840.00</h4>
+						</div>
+						<button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 rounded-sm">
+							Add to Cart
+						</button>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="index.js" type="text/javascript"></script>
+  	</body>
+</html>

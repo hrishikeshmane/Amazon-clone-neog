@@ -31,7 +31,9 @@
   .sm--hidden {
     display: none !important;
   }
-  .sm--grid-flow-row-dense {
+  .sm--flex {
+    display: flex;
+    flex-direction: row;
   }
 }
 
