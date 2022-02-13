@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link white rel="stylesheet" href="./fast.css" />
+    <link white rel="stylesheet" href="./fast.css"/>
     <link white
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
@@ -17,7 +17,7 @@
 		<header>
 			<div class="flex items-center bg-amazon_blue p-1 grow py-2">
 				<div class="mt-2 mb-0 ml-2 mr-8 flex items-center grow-0">
-					<img src="./assets/amazon.png"	width="120"	height="30" class="pointer"/>
+					<a href="./index.html"><img src="./assets/amazon.png"	width="120"	height="30" class="pointer"/></a>
 				</div>
 
 				<div class="flex xs--hidden items-center h-10 rounded-md grow pointer bg-amazon_yellow bg-amazon_yellow--hover">
@@ -37,7 +37,7 @@
 					</div>
 
 					<div class="relative link white items-center pointer ml-2">
-						<i class="fa fa-shopping-cart fa-3x mb-2 mr-5"></i>
+						<a href="./cart.html"> <i class="fa fa-shopping-cart fa-2x mb-2 mr-5"></i> </a>
 						<span class="flex flex-center absolute -top-1 right-0 m-0 p-1 bg-amazon_yellow rounded-full black font-bold">
 							4
 						</span>
@@ -46,70 +46,69 @@
 			</div>
 
 			<div class="flex space-x-3 p-2 pl-6 items-center bg-amazon_blue-light text-white">
-				<p class="btn-link link white flex items-center pointer">
+				<p href="./products.html" class="btn-link link white flex items-center pointer">
 					<i class="fa fa-bars fa-lg mr-2"></i>
 					All
 				</p>
-				<p class="btn-link link white mx-3 pointer">Electronics</p>
-				<p class="btn-link link white mx-3 pointer">Men's Clothing</p>
-				<p class="btn-link link white mx-3 pointer">Women's clothing</p>
+				<a href="./products.html" class="btn-link link white mx-3 pointer">Electronics</a>
+				<a href="./products.html" class="btn-link link white mx-3 pointer">Men's Clothing</a>
+				<a href="./products.html" class="btn-link link white mx-3 pointer">Women's clothing</a>
 
-				<p class="btn-link link white lg--hidden mx-3 pointer">Buy again</p>
-				<p class="btn-link link white lg--hidden mx-3 pointer">Food & Grocery</p>
-				<p class="btn-link link white lg--hidden mx-3 pointer">Prime</p>
-				<p class="btn-link link white lg--hidden mx-3 pointer">Health & Personal Care</p>
+				<a href="./products.html" class="btn-link link white lg--hidden mx-3 pointer">Buy again</a>
+				<a href="./products.html" class="btn-link link white lg--hidden mx-3 pointer">Food & Grocery</a>
+				<a href="./products.html" class="btn-link link white lg--hidden mx-3 pointer">Prime</a>
+				<a href="./products.html" class="btn-link link white lg--hidden mx-3 pointer">Health & Personal Care</a>
 			</div>
 		</header>
 
 		<main>
 			<img src="./assets/banner.jpg" class="w-full object-fit-cover m-auto" />
-			<div class="grid gap-10 grid-cols-4 product-feed absolute top-50pc w-full mt-10 mx-2 mb-5 z-4"> 
+			<div class="grid gap-10 grid-cols-4 product-feed absolute top-50pc mt-10 mx-10 z-4"> 
 			
 				<div class="card card-shadow flex flex-col bg-white rounded-sm border p-5">
 					<h4 class="my-3">Electronics</h4>
 					<img src="./assets/electronics.jpg" class="object-fit-cover m-auto" />
-					<button class="my-4 mt-10 mr-auto text">See More</button>
+					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
 				</div>
 
 				<div class="card card-shadow flex flex-col bg-white rounded-sm border p-5">
 					<h4 class="my-3">Men's Clothing</h4>
 					<img src="./assets/mensclothing.jpg" class="object-fit-cover m-auto" />
-					<button class="my-4 mt-auto mr-auto text">See More</button>
+					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
 				</div>
 
 				<div class="card card-shadow flex flex-col bg-white rounded-sm border p-5">
 					<h4 class="my-3">Great Indian Sale</h4>
 					<img src="./assets/sale.jpg" class="object-fit-cover m-auto" />
-					<button class="my-4 mt-auto mr-auto text">See More</button>
+					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
 				</div>
 
 				<div class="card card-shadow col-span-full flex flex-col bg-white rounded-sm border p-5">
 					<h4 class="my-3">Women's Clothing</h4>
 					<img src="./assets/womenclothing.jpg" class="object-fit-cover" />
-					<button class="my-4 mt-auto mr-auto text">See More</button>
+					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
 				</div>
 
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0">
+				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
 					<img src="./assets/pushpa1.jpg" class=" h-full object-fit-cover rounded-sm" />
 					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
 				</div>
 
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0">
+				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
 					<img src="./assets/spiderman.jpg" class="h-full object-fit-cover rounded-sm" />
 					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
 				</div>
 
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0">
+				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
 					<img src="./assets/ironman.jpg" class="h-full object-fit-cover rounded-sm" />
 					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
 				</div>
 
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0">
+				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
 					<img src="./assets/interstellar.jpg"class="h-full object-fit-cover rounded-sm" />
 					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
 				</div>
 			</div>
-
 		</main>
 
 		<script src="index.js" type="text/javascript"></script>
