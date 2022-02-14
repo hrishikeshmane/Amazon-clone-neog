@@ -10,6 +10,14 @@
   .xl--hidden {
     display: none !important;
   }
+  .xl--flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .xl--flex-col {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Laptops */
@@ -17,12 +25,28 @@
   .lg--hidden {
     display: none !important;
   }
+  .lg--flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .lg--flex-col {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Tablets */
 @media only screen and (max-width: 768px) {
   .md--hidden {
     display: none !important;
+  }
+  .md--flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .md--flex-col {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -35,11 +59,23 @@
     display: flex;
     flex-direction: row;
   }
+  .sm--flex-col {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .xs--hidden {
     display: none !important;
+  }
+  .sx--flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .sx--flex-col {
+    display: flex;
+    flex-direction: column;
   }
 }

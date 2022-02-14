@@ -10,14 +10,13 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
 	<link white rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>Amazon Clone</title>
   </head>
   <body>
 		<header>
 			<div class="flex items-center bg-amazon_blue p-1 grow py-2">
 				<div class="mt-2 mb-0 ml-2 mr-8 flex items-center grow-0">
-					<img src="./assets/amazon.png"	width="120"	height="30" class="pointer"/>
+					<a href="./index.html"><img src="./assets/amazon.png"	width="120"	height="30" class="pointer"/></a>
 				</div>
 
 				<div class="flex xs--hidden items-center h-10 rounded-md grow pointer bg-amazon_yellow bg-amazon_yellow--hover">
@@ -37,7 +36,7 @@
 					</div>
 
 					<div class="relative link white items-center pointer ml-2">
-						<i class="fa fa-shopping-cart fa-3x mb-2 mr-5"></i>
+						<a href="./cart.html"> <i class="fa fa-shopping-cart fa-2x mb-2 mr-5"></i> </a>
 						<span class="flex flex-center absolute -top-1 right-0 m-0 p-1 bg-amazon_yellow rounded-full black font-bold">
 							4
 						</span>
@@ -62,7 +61,7 @@
 		</header>
 		
 		<div class="grid product-container">
-			<aside class="aside bg-light-gray">	
+			<aside class="sidebar bg-light-gray">	
 				<div class="flex flex-col m-6">
 					<div class="flex">
 						<h4>Filter</h4>
@@ -145,8 +144,8 @@
 				</div>
 			</aside>
 
-			<main class="main">
-				<div class="grid gap-5 grid-cols-4 product-feed w-90pc my-10 mx-auto"> 
+			<main class="products h-full">
+				<div class="grid grid-cols-4 product-feed my-10 mx-auto"> 
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
 						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
 						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
