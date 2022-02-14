@@ -64,54 +64,23 @@
 			</div>
 		</header>
 
-		<main class="bg-light-gray">
-			<img src="./assets/banner.jpg" class="w-full object-fit-cover m-auto" />
-			<div class="grid gap-10 grid-cols-4 product-feed absolute top-50pc mt-10 mx-10 z-4"> 
-			
-				<div class="card card-shadow flex flex-col bg-white rounded-sm border p-5">
-					<h4 class="my-3">Electronics</h4>
-					<img src="./assets/electronics.jpg" class="object-fit-cover m-auto" />
-					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
-				</div>
+		<main class="login-page relative flex flex-center bg-light-gray h-full" >
+			<div class="login-container absolute card card-shadow flex-col px-10 py-14 rounded-md">
+                <label for="password">Email</label>
+                <input class="py-1 px-2 h-12 mb-5 text border rounded-sm" id="username" type="text" placeholder="Enter your email">
 
-				<div class="card card-shadow flex flex-col bg-white rounded-sm border p-5">
-					<h4 class="my-3">Men's Clothing</h4>
-					<img src="./assets/mensclothing.jpg" class="object-fit-cover m-auto" />
-					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
-				</div>
+                <label for="password">Password</label>
+                <input class="py-1 px-2 h-12 mb-5 text border rounded-sm" id="password" type="password" placeholder="Enter your password">
 
-				<div class="card card-shadow flex flex-col bg-white rounded-sm border p-5">
-					<h4 class="my-3">Great Indian Sale</h4>
-					<img src="./assets/sale.jpg" class="object-fit-cover m-auto" />
-					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
-				</div>
+                <div class="flex items-center mb-5">
+                    <input class="p-1 mr-1" id="signedIn" type="checkbox">
+                    <label class="text-base" for="signedIn">Keep me signed in</label><br>
+                </div>
 
-				<div class="card card-shadow col-span-full flex flex-col bg-white rounded-sm border p-5">
-					<h4 class="my-3">Women's Clothing</h4>
-					<img src="./assets/womenclothing.jpg" class="object-fit-cover" />
-					<a href="./products.html" class="mymr-auto text mt-auto">See More</a>
-				</div>
-
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
-					<img src="./assets/pushpa1.jpg" class=" h-full object-fit-cover rounded-sm" />
-					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
-				</div>
-
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
-					<img src="./assets/spiderman.jpg" class="h-full object-fit-cover rounded-sm" />
-					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
-				</div>
-
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
-					<img src="./assets/ironman.jpg" class="h-full object-fit-cover rounded-sm" />
-					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
-				</div>
-
-				<div class="card card-shadow col-span-full flex flex-col relative rounded-sm w-full px-0 mb-5">
-					<img src="./assets/interstellar.jpg"class="h-full object-fit-cover rounded-sm" />
-					<button class="absolute bottom-2 mr-auto white w-full py-4 bg-bar">Watch now</button>
-				</div>
-			</div>
+                <button class="button bg-amazon_yellow bg-amazon_yellow--hover p-1 h-12 rounded-sm">
+                    Sign in
+                </button>
+            </div>
 		</main>
 
 		<script src="index.js" type="text/javascript"></script>
