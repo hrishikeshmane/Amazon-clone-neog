@@ -1,4 +1,4 @@
-# Fast CSS
+# Amazon Clone
 
 https://amzn-clone-neog.netlify.app/
 
