@@ -7,7 +7,7 @@
 }
 .products {
   grid-area: products;
-  height: calc(100vh - 92px);
+  height: calc(100vh - 93px);
   overflow-y: auto;
 }
 
@@ -51,6 +51,9 @@
     grid-template-areas:
       "sidebar"
       "products";
+  }
+  .products {
+    height: calc(100vh - 401px);
   }
   .product-feed {
     grid-template-columns: repeat(1, minmax(0, 1fr));

@@ -16,7 +16,7 @@
 		<header>
 			<div class="flex items-center bg-amazon_blue p-1 grow py-2">
 				<div class="mt-2 mb-0 ml-2 mr-8 flex items-center grow-0">
-					<a href="./index.html"><img src="./assets/amazon.png"	width="120"	height="30" class="pointer"/></a>
+					<a href="./index.html"><img src="./assets/amazon.png"	width="120"	height="30" class="pointer" alt="amazon"/></a>
 				</div>
 
 				<div class="flex xs--hidden items-center h-10 rounded-md grow pointer bg-amazon_yellow bg-amazon_yellow--hover">
@@ -26,13 +26,17 @@
 
 				<div class="text-white flex items-center text-sm space-x-6s mx-6 ml-auto">
 					<div class="link white pointer mx-2">
-						<p>Sign in</p>
-						<p class="font-bold text-sm">Account & Lists</p>
+						<a href="./login.html">
+							<p>Sign in</p>
+							<p class="font-bold text-sm">Account & Lists</p>
+						</a>
 					</div>
 
 					<div class="link white pointer mx-2">
-						<p>Wishlist	</p>
-						<p class="font-bold text-sm">& Orders</p>
+						<a href="./wishlist.html">
+							<p>Wishlist	</p>
+							<p class="font-bold text-sm">& Orders</p>
+						</a>
 					</div>
 
 					<div class="relative link white items-center pointer ml-2">
@@ -62,13 +66,13 @@
 		
 		<div class="grid product-container">
 			<aside class="sidebar bg-light-gray">	
-				<div class="flex flex-col m-6">
+				<div class="flex flex-col p-4">
 					<div class="flex">
 						<h4>Filter</h4>
 						<button class="btn-link-secondary ml-auto">clear</button>
 					</div>
 					<hr/>
-					<div class="flex flex-col my-4">
+					<div class="flex flex-col mt-2 mb-4">
 						<h4 class="font-semibold mb-2 text-2xl">Price</h4>
 						<input type="range" list="tickmarks" class="h-2">
 						<datalist id="tickmarks">
@@ -86,7 +90,7 @@
 						</datalist>
 
 					</div>
-					<div class="flex flex-col my-4">
+					<div class="flex flex-col mb-2">
 						<h4 class="font-semibold mb-2 text-2xl">Caegory</h4>
 						<div class="flex-col sm--flex wrap">
 							<div class="flex items-center p-1 pr-4 w-fit">
@@ -107,7 +111,7 @@
 							</div>				
 						</div>
 					</div>
-					<div class="flex flex-col my-4">
+					<div class="flex flex-col mb-2">
 						<h4 class="font-semibold mb-2 text-2xl">Rating</h4>
 						<div class="flex-col sm--flex wrap">
 							<div class="flex items-center p-1 pr-4 w-fit">
@@ -128,7 +132,7 @@
 							</div>	
 						</div>
 					</div>
-					<div class="flex flex-col my-4">
+					<div class="flex flex-col mb-2">
 						<h4 class="font-semibold mb-2 text-2xl">Sort by</h4>
 						<div class="flex-col sm--flex wrap">
 							<div class="flex items-center p-1 pr-4 w-fit">
@@ -149,7 +153,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
 						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
 						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/tshirt.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/tshirt.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="tshirt"/>
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">Mens Casual Premium Slim Fit T-Shirts</h4>
 							<p class="text-xs my-2 line-clamp-2">Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and..</p>
@@ -162,7 +166,7 @@
 
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
 						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
-						<img src="./assets/tshirt2.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/tshirt2.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="tshirt"/>
 						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
 						<div class="mt-auto">
 							<h4 class="my-3">Mens Casual Slim Fit</h4>
@@ -177,7 +181,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
 						<p class="absolute top-1 left-2 text-xs italic">Men's Clothing</p>
 						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/jacket.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/jacket.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="jacket"/>
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">Mens Cotton Jacket</h4>
 							<p class="text-xs my-2 line-clamp-2">great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working,..</p>
@@ -191,7 +195,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
 						<p class="absolute top-1 left-2 text-xs italic">Women's  Clothing</p>
 						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/top1.png" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/top1.png" height="200" width="200" class="object-fit-cover m-auto" alt="top"/>
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">Opna Women's Short Sleeve Moisture</h4>
 							<p class="text-xs my-2 line-clamp-2">100% Polyester, Machine wash, 100% cationic polyester interlock, Machine..</p>
@@ -205,7 +209,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
 						<p class="absolute top-1 left-2 text-xs italic">Women's  Clothing</p>
 						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/top2.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/top2.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="top"/>
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">MBJ Women's Solid Short Sleeve Boat Neck V</h4>
 							<p class="text-xs my-2 line-clamp-2">95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach..</p>
@@ -219,7 +223,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10 ">
 						<p class="absolute top-1 left-2 text-xs italic">electronics</p>
 						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/monitor.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/monitor.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="monitor"/>
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor/h4>
 							<p class="text-xs my-2 line-clamp-2">49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with..</p>
@@ -233,7 +237,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
 						<p class="absolute top-1 left-2 text-xs italic">electronics</p>
 						<i class="fa fa-heart fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/monitor2.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/monitor2.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="monitor"/>
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">Acer 21.5 inches Full HD Ultra-Thin</h4>
 							<p class="text-xs my-2 line-clamp-2">21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon..</p>
@@ -247,7 +251,7 @@
 					<div class="card card-shadow relative flex flex-col m-5 bg-white rounded-sm border p-10">
 						<p class="absolute top-1 left-2 text-xs italic">electronics</p>
 						<i class="fa fa-heart-o fa-2x absolute top-1 right-1 pointer red" aria-hidden="true"></i>
-						<img src="./assets/harddisk.jpg" height="200" width="200" class="object-fit-cover m-auto" />
+						<img src="./assets/harddisk.jpg" height="200" width="200" class="object-fit-cover m-auto" alt="harddisk" />
 						<div class="mb-5 mt-auto">
 							<h4 class="my-3">WD 4TB Portable External Hard Drive</h4>
 							<p class="text-xs my-2 line-clamp-2">Expand your PS4 gaming experience, Play anywhere Fast and easy, setup..</p>
