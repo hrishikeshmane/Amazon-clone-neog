@@ -19,3 +19,4 @@ https://amzn-clone-neog.netlify.app/
 - Wishlist
 - Image
 - Input
+- Mobile responive
