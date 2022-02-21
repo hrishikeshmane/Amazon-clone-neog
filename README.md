@@ -20,3 +20,9 @@ https://amzn-clone-neog.netlify.app/
 - Image
 - Input
 - Mobile responive
+
+## GIFS
+
+![Home and Product page](https://github.com/hrishikeshmane/Amazon-clone-neog/blob/dev/assets/ezgif-5-22e14294e6.gif)
+
+![Wishlist and Login page](https://github.com/hrishikeshmane/Amazon-clone-neog/blob/dev/assets/login-wishlist.gif)
